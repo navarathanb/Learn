@@ -1,0 +1,45 @@
+React JS:
+virtual dom in react,
+render function will call for every component so achieving the execute the part of page
+to interactive ui
+invented by facebook
+it contains components
+it is view only
+virtual DOM:
+	no memory wastage
+one way data binding: to better control on view
+server side rendering: to page loads faster, 
+html + JS = JSX(javascript xml)
+jsx:
+var styles = {color:'red'}
+
+var test2 = React.createClass({
+	getInitialState:function(){
+		return{
+		user:'Rathan',
+		id:101
+		};
+	},
+	render:function(){
+		setTimeout(()=>{this.setState({user:'test',id:202})},5000);
+		return(
+		<h3>USer : {this.state.user}</h3>
+		<h4>ID : {this.state.id}</h4>
+		<h1>{this.props.name}</h1>
+		<h2>This is head</h2>
+		);
+	}
+}
+)
+
+var test=React.createClass(
+{
+render:function(){
+	return(
+		<test2/ name="ALex">
+		<test2/ name="James">
+		<h2 style={styles}>Hello World</h2>
+		<h3>Sum is : {2+5}</h3>
+			);
+	}
+})
