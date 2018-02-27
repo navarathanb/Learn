@@ -43,3 +43,7 @@ render:function(){
 			);
 	}
 })
+Props : are read-only components
+states: each component has states
+
+https://www.youtube.com/watch?v=pp2Jl7xkoeA
